@@ -52,16 +52,17 @@
       <a href="https://mp.weixin.qq.com/s?__biz=MzI3OTUzMzcwNw==&amp;mid=2247494511&amp;idx=2&amp;sn=5266072afafba70d6843379c19fccf7e&amp;chksm=eb44ea8bdc33639ddc8cd5ef8c074d0a8c1ec6dd3ac272388acfc8adeff79ad0aa157a3bb331&token=1844248951&lang=zh_CN#rd" target="_blank">点我进入交流群&内推群（通过暗号才能进）</a>
     </center>
     </div>
-<div>
+  <div style="margin-top: 2rem;">
     <center>
-      <a href="https://mp.weixin.qq.com/s?__biz=MzI3OTUzMzcwNw==&mid=100010220&idx=1&sn=66a26d9db4cfa22f9d45e5d2d493fc19&chksm=6b44e9085c33601e935ef11fceda67261af273a5716de3deb28c1aa9e3585ddd10fefd984ebb#rd" target="_blank">欢迎关注 —— 在BAT打工的新时代农民工
+      <a href="https://mp.weixin.qq.com/s?__biz=MzI3OTUzMzcwNw==&mid=100010220&idx=1&sn=66a26d9db4cfa22f9d45e5d2d493fc19&chksm=6b44e9085c33601e935ef11fceda67261af273a5716de3deb28c1aa9e3585ddd10fefd984ebb#rd" target="_blank"> 源码点这里
     </a>
     </center>
     </div>
   </div>
+
   <div style='display: none'>
-    <img id='img' src='' alt='' />
-    <img class='hide' id='hat0' src='img/hat6.png' />
+    <img id='img' src='' alt="欢迎关注公众号-程序猿石头" />
+    <img class='hide' id='hat0' src='img/hat6.png' alt="欢迎关注公众号-程序猿石头" />
     <img class='hide' id='hat1' src='img/hat0.png' />
     <img class='hide' id='hat2' src='img/hat2.png' />
     <img class='hide' id='hat3' src='img/hat3.png' />
@@ -158,12 +159,14 @@
     hatInstance.setControlVisible("mt", false);
     canvasFabric.add(hatInstance)
   }
+
   function exportFunc() {
     document.getElementsByClassName("operation-box")[0].style.display = "none";
     document.getElementsByClassName("operation-btns")[0].style.display = "none";
 
     cvs.style.display = "none";
     exportImage.style.display = "block";
+    exportImage.setAttribute("crossOrigin",'anonymous')
     exportImage.src = canvasFabric.toDataURL({
       width: screenWidth,
       height: screenWidth
