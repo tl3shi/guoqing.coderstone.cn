@@ -54,7 +54,7 @@
     </div>
   <div style="margin-top: 2rem;">
     <center>
-      <a href="https://mp.weixin.qq.com/s?__biz=MzI3OTUzMzcwNw==&mid=100010220&idx=1&sn=66a26d9db4cfa22f9d45e5d2d493fc19&chksm=6b44e9085c33601e935ef11fceda67261af273a5716de3deb28c1aa9e3585ddd10fefd984ebb#rd" target="_blank"> 源码点这里
+      <a href="https://mp.weixin.qq.com/s?__biz=MzI3OTUzMzcwNw==&amp;mid=2247496767&amp;idx=1&amp;sn=ee3296e06ec3907d0a2d8387b41239fd&amp;chksm=eb44f5dbdc337ccdb9fea94bf84138cde6df559ed3e49aaf4b68aa084f332c355c85bcafbf9d&token=354900643&lang=zh_CN#rd" target="_blank"> 源码点这里
     </a>
     </center>
     </div>
@@ -62,13 +62,13 @@
 
   <div style='display: none'>
     <img id='img' src='' alt="欢迎关注公众号-程序猿石头" />
-    <img class='hide' id='hat0' src='img/hat6.png' alt="欢迎关注公众号-程序猿石头" />
-    <img class='hide' id='hat1' src='img/hat0.png' />
+    <img class='hide' id='hat0' src='img/hat0.png' alt="欢迎关注公众号-程序猿石头" />
+    <img class='hide' id='hat1' src='img/hat1.png' />
     <img class='hide' id='hat2' src='img/hat2.png' />
     <img class='hide' id='hat3' src='img/hat3.png' />
-    <img class='hide' id='hat4' src='img/hat1.png' />
-    <img class='hide' id='hat5' src='img/hat4.png' />
-    <img class='hide' id='hat6' src='img/hat5.png' />
+    <img class='hide' id='hat4' src='img/hat4.png' />
+    <img class='hide' id='hat5' src='img/hat5.png' />
+    <img class='hide' id='hat6' src='img/hat6.png' />
     <img class='hide' id='hat7' src='img/hat7.png' />
     <img class='hide' id='hat8' src='img/hat8.png' />
     <img class='hide' id='hat9' src='img/hat9.png' />
@@ -97,6 +97,7 @@
   var canvasFabric;
   var hatInstance;
   var screenWidth = document.getElementById("content").scrollHeight;
+
   function viewer() {
     var file = document.getElementById("upload").files[0];
     console.log(file);
@@ -113,6 +114,7 @@
       img.src = ""
     }
   }
+
   function img2Cvs(img) {
     cvs.width = img.width;
     cvs.height = img.height;
@@ -130,6 +132,7 @@
     document.getElementsByClassName("o-btn1")[0].style.display = "none";
     document.getElementsByClassName("o-btn2")[0].style.display = "block";
   }
+
   function changeHat() {
     document.getElementById(hat).style.display = "none";
     var hats = document.getElementsByClassName("hide");
@@ -139,8 +142,7 @@
     if (hatInstance) {
       canvasFabric.remove(hatInstance)
     }
-    console.log(hatImage.width);
-    console.log(100 / hatImage.width);
+    
     hatInstance = new fabric.Image(hatImage, {
       top: 0,
       left: 0,
